@@ -11,34 +11,43 @@
     />
     <link rel="stylesheet" href="/styles.css" />
   </head>
+
   <body>
-    <audio
-      src="y2mate.com - Kevin MacLeod Merry Go(1).mp3"
-      type="audio/mpeg"
-      autoplay
-      loop
-    ></audio>
-    <div class="container">
-      <div class="flex-column flex-center" id="home">
-        <h1
-          class="line-1 anim-typewriter"
-          style="
-            font-size: 4rem;
-            color: rgb(15, 15, 15);
-            background-color: white;
-            border-radius: 23px;
-            opacity: 0.8;
-            padding: 1em;
-          "
-        >
-          Are you ready?
-        </h1>
-        <a href="kategori.html" class="btn">Play</a>
-        <a href="highscores.html" class="btn" id="highscore-btn"
-          >High Scores <i class="fas fa-crown"></i>
-        </a>
-        <a href="about.html" class="btn-about">About Us</a>
+    <section>
+      <div class="container" style="justify-content: center">
+        <div class="flex-column flex-center" id="home">
+          <h1
+            class="line-1 anim-typewriter heading-1"
+            style="
+              font-size: 4rem;
+              color: rgb(15, 15, 15);
+              background-color: white;
+              border-radius: 23px;
+              opacity: 0.8;
+              padding: 1em;
+            "
+          >
+            Are you ready?
+          </h1>
+          <a href="kategori.html" class="btn-size">Play</a>
+          <a href="highscores.html" class="btn-size" id="highscore-btn"
+            >High Scores <i class="fas fa-crown"></i>
+          </a>
+          <a
+            href="about.html"
+            class="btn-size"
+            style="
+              background: linear-gradient(
+                90deg,
+                rgb(18, 255, 137) 0%,
+                rgb(255, 0, 98) 100%
+              );
+            "
+            >About Us</a
+          >
+        </div>
       </div>
-    </div>
+      <audio src="backsound.mp3" type="audio/mpeg" autoplay loop></audio>
+    </section>
   </body>
 </html>

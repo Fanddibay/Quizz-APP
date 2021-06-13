@@ -6,22 +6,20 @@
   background-color: rgb(29, 26, 26);
 }
 
-body {
-  background-image: url(background.jpeg);
-  background-position: center;
-  object-fit: contain;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: auto;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-size: 62.5%;
   font-family: "Nova Square", cursive;
+}
+
+section {
+  background-image: url(background.jpeg);
+  background-position: center;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 h1 {
@@ -67,6 +65,22 @@ h2 {
 
 .hidden {
   display: none;
+}
+
+.btn-size {
+  font-size: 2.4rem;
+  padding: 3rem 0rem;
+  width: 30rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: rgb(28, 26, 26);
+  background: linear-gradient(
+    90deg,
+    rgb(18, 92, 255) 0%,
+    rgb(0, 102, 255) 100%
+  );
+  border-radius: 4px;
 }
 
 .btn {
@@ -188,18 +202,49 @@ h2 {
   width: 0%;
 }
 
-@media screen and (max-width: 768px) {
-  body {
+@media screen and (max-width: 992px) {
+  section {
     background-image: url(background.jpeg);
     background-position: center;
     object-fit: contain;
-    min-height: 100%;
     background-repeat: no-repeat;
-    min-width: 100%;
-    position: relative;
+    background-size: 100% 100%;
   }
+
   .choice-container {
-    min-width: 40rem;
+    min-width: 30rem;
+  }
+
+  .btn-size {
+    font-size: 6rem;
+    padding: 6.5rem 10rem;
+    width: 60rem;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(28, 26, 26);
+    background: linear-gradient(
+      90deg,
+      rgb(18, 92, 255) 0%,
+      rgb(0, 102, 255) 100%
+    );
+    border-radius: 24px;
+  }
+
+  .container .heading-1 {
+    font-size: 7rem !important;
+    margin-top: 2em;
+  }
+
+  #about-btn {
+    font-size: 2.4rem;
+    padding: 2rem 0;
+    width: 30rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: rgb(28, 26, 26);
+
+    border-radius: 4px;
   }
 
   .flex-center a {
