@@ -68,8 +68,10 @@ let questions = [
     answer: 2,
   },
   {
-    question: "pajak motor brp duit?",
-    choice1: "1",
+    question:
+      "pajak motor brp duit? qwekhqjkwhe jkqwhejk hwqkjhe kjqwhejk hwqjkhe jkwqhejkwqh kjehwqjkhekjwqhejkhwqkjhe qwewqe fandi bayu anggoro sakti sakti sakti sakti sakti sakti",
+    choice1:
+      "qwekqwh kjwqhjk hejkqwh kjwqhek jhwqkehwqkjheqo owqhe jkqhwe yqwkhekjqwhe uiqwuie hwquihe jkwqheq fjk qwkj fabdu bay uqwej1",
     choice2: "2",
     choice3: "3",
     choice4: "4",
