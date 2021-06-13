@@ -52,12 +52,12 @@ let questions = [
     answer: 2,
   },
   {
-    question: "what is 2 + 2",
-    choice1: "1",
-    choice2: "2",
-    choice3: "3",
-    choice4: "4",
-    answer: 2,
+    question: "mencoba mana yang benar hayo",
+    choice1: "Aku",
+    choice2: "kamu",
+    choice3: "dia",
+    choice4: "siapa aja",
+    answer: 4,
   },
   {
     question: "what is 2 + 2",
@@ -68,7 +68,7 @@ let questions = [
     answer: 2,
   },
   {
-    question: "what is 2 + 2",
+    question: "pajak mtanah brp duit bro?",
     choice1: "1",
     choice2: "2",
     choice3: "3",
