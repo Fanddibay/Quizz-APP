@@ -6,6 +6,16 @@
   background-color: rgb(29, 26, 26);
 }
 
+body {
+  background-image: url(background.jpeg);
+  background-position: center;
+  object-fit: contain;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -179,6 +189,15 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    background-image: url(background.jpeg);
+    background-position: center;
+    object-fit: contain;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    position: relative;
+  }
   .choice-container {
     min-width: 40rem;
   }
@@ -343,7 +362,7 @@ input::placeholder {
     width: 0;
   }
   to {
-    width: 7.5em;
+    width: 10em;
   }
 }
 @keyframes blinkTextCursor {
