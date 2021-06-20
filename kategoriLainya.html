@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz Page</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="/src/styles/styles.css" />
   </head>
 
   <style>
@@ -25,22 +25,7 @@
         background-repeat: no-repeat;
       "
     >
-      <div
-        style="
-          background-color: #000;
-          opacity: 0.7;
-          border-radius: 25px;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-        "
-      >
-        <h1 style="color: rgb(255, 255, 255); font-size: 4rem">
-          <span style="color: yellow; font-size: 4rem">Kategori :</span>
-          Pajak Kendaraan
-        </h1>
-      </div>
-      <div class="justify-center flex-column solved-question" id="game">
+      <div class="justify-center flex-column" id="game">
         <div id="hud">
           <div id="hud-item">
             <p id="progressText" class="hud-prefix">question</p>
@@ -53,9 +38,7 @@
             <h1 class="hud-main-text" id="score">0</h1>
           </div>
         </div>
-        <h1 id="question" class="question">
-          What is the answer to this question
-        </h1>
+        <h1 id="question">What is the answer to this question</h1>
         <div class="choice-container">
           <p class="choice-prefix">A</p>
           <p class="choice-text" data-number="1">Choice 1</p>
@@ -74,6 +57,6 @@
         </div>
       </div>
     </div>
-    <script src="kendaraanGame.js"></script>
+    <script src="/src/script/kategoriLainya.js"></script>
   </body>
 </html>

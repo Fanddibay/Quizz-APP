@@ -15,7 +15,7 @@
 }
 
 section {
-  background-image: url(background.jpeg);
+  background-image: url(/src/assets/background.jpeg);
   background-position: center;
   object-fit: contain;
   background-repeat: no-repeat;
@@ -99,6 +99,36 @@ h2 {
   border-radius: 4px;
 }
 
+.btn-1 {
+  font-size: 2.4rem;
+  padding: 2rem 0;
+  width: 30rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: rgb(28, 26, 26);
+  background: linear-gradient(
+    90deg,
+    rgb(18, 255, 223) 0%,
+    rgb(255, 81, 0) 100%
+  );
+}
+
+.btn-1:hover {
+  font-size: 2.4rem;
+  padding: 2rem 0;
+  width: 30rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: rgb(28, 26, 26);
+  background: linear-gradient(
+    90deg,
+    rgb(18, 255, 223) 0%,
+    rgb(56, 43, 38) 100%
+  );
+}
+
 .btn:hover {
   cursor: pointer;
   box-shadow: 0 0.4 1.4rem 0 rgba(7, 144, 244, 0.6);
@@ -106,7 +136,7 @@ h2 {
   transform: scale(1.03);
 }
 
-.btn[:disabled]:hover {
+.btn:disabled:hover {
   cursor: not-allowed;
   box-shadow: none;
   transform: none;
@@ -214,7 +244,7 @@ h2 {
 
 @media screen and (max-width: 992px) {
   section {
-    background-image: url(background.jpeg);
+    background-image: url(/src/assets/background.jpeg);
     background-position: center;
     object-fit: cover;
     background-repeat: repeat;
@@ -237,6 +267,96 @@ h2 {
 
   .fa-crown {
     font-size: 5rem !important;
+  }
+
+  .btn {
+    font-size: 1.4rem;
+    padding: 2rem 0;
+    width: 25rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: rgb(28, 26, 26);
+    background: linear-gradient(
+      90deg,
+      rgb(18, 92, 255) 0%,
+      rgb(0, 102, 255) 100%
+    );
+    border-radius: 4px;
+  }
+  .btn:nth-child(1) {
+    font-size: 1.4rem;
+    padding: 2rem 0;
+    width: 25rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: rgb(28, 26, 26);
+    background: linear-gradient(
+      90deg,
+      rgb(18, 255, 223) 0%,
+      rgb(255, 81, 0) 100%
+    );
+  }
+
+  .btn-1 {
+    font-size: 1.4rem;
+    padding: 2rem 0;
+    width: 25rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: rgb(28, 26, 26);
+    background: linear-gradient(
+      90deg,
+      rgb(18, 255, 223) 0%,
+      rgb(255, 81, 0) 100%
+    );
+  }
+
+  .btn:nth-child(2) {
+    font-size: 1.4rem;
+    padding: 2rem 0;
+    width: 25rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: rgb(28, 26, 26);
+    background: linear-gradient(
+      90deg,
+      rgb(0, 132, 255) 0%,
+      rgb(255, 0, 0) 100%
+    );
+  }
+
+  .btn:nth-child(3) {
+    font-size: 1.4rem;
+    padding: 2rem 0;
+    width: 25rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: rgb(28, 26, 26);
+    background: linear-gradient(
+      90deg,
+      rgb(18, 255, 18) 0%,
+      rgb(22, 96, 206) 100%
+    );
+  }
+
+  .btn:nth-child(4) {
+    font-size: 1.4rem;
+    padding: 2rem 0;
+    width: 25rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: rgb(28, 26, 26);
+    background: linear-gradient(
+      90deg,
+      rgb(204, 255, 18) 0%,
+      rgb(255, 81, 0) 100%
+    );
   }
 
   .btn-size {

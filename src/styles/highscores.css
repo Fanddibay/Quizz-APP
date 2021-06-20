@@ -1,0 +1,39 @@
+body {
+  color: #fff;
+}
+
+#highScoresList {
+  margin-bottom: 4rem;
+  background-color: rgb(67, 67, 67);
+  opacity: 0.9;
+  padding: 8rem;
+  border-radius: 8px;
+}
+
+.high-score {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.time-line {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 3px;
+  background: #007bff;
+}
+
+@media screen and (max-width: 994px) {
+  .high-score {
+    font-size: 1.4rem;
+    margin-bottom: 0.2rem;
+  }
+
+  #highScoresList {
+    margin-bottom: 0.1rem;
+    background-color: rgb(67, 67, 67);
+    opacity: 0.9;
+    border-radius: 8px;
+    padding: 5rem;
+  }
+}

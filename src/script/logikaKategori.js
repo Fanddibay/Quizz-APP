@@ -12,7 +12,7 @@ let availableQuestions = [];
 
 let questions = [
   {
-    question: "apa",
+    question: "pajak rumah brp duit",
     choice1: "1",
     choice2: "2",
     choice3: "3",
@@ -68,7 +68,7 @@ let questions = [
     answer: 2,
   },
   {
-    question: "pajak mtanah brp duit bro?",
+    question: "what is 2 + 2",
     choice1: "1",
     choice2: "2",
     choice3: "3",
@@ -91,7 +91,7 @@ getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
     localStorage.setItem("mostRecentScore", score);
 
-    return window.location.assign("/end.html");
+    return window.location.assign("end.html");
   }
 
   questionCounter++;
@@ -132,7 +132,7 @@ choices.forEach((choice) => {
     setTimeout(() => {
       selectedChoice.parentElement.classList.remove(classToApply);
       getNewQuestion();
-    }, 1000);
+    }, 100);
   });
 });
 

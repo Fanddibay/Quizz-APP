@@ -68,10 +68,8 @@ let questions = [
     answer: 2,
   },
   {
-    question:
-      "pajak motor brp duit? qwekhqjkwhe jkqwhejk hwqkjhe kjqwhejk hwqjkhe jkwqhejkwqh kjehwqjkhekjwqhejkhwqkjhe qwewqe fandi bayu anggoro sakti sakti sakti sakti sakti sakti",
-    choice1:
-      "qwekqwh kjwqhjk hejkqwh kjwqhek jhwqkehwqkjheqo owqhe jkqhwe yqwkhekjqwhe uiqwuie hwquihe jkwqheq fjk qwkj fabdu bay uqwej1",
+    question: "pajak mtanah brp duit bro?",
+    choice1: "1",
     choice2: "2",
     choice3: "3",
     choice4: "4",
@@ -93,7 +91,7 @@ getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
     localStorage.setItem("mostRecentScore", score);
 
-    return window.location.assign("/end.html");
+    return window.location.assign("./end.html");
   }
 
   questionCounter++;
