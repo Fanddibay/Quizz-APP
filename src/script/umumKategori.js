@@ -20,8 +20,7 @@ let questions = [
     answer: 1,
   },
   {
-    question:
-      "Pajak merupakan iuran wajib yang dibayar oleh rakyat, manakah dibawah ini yang bukan merupakan pajak yang dibayar secara langsung oleh rakyat?",
+    question: "Dibawah ini manakah yang termasuk pajak tidak langsung?",
     choice1: "PPN (Pajak pertambahan nilai)",
     choice2: "PPh (Pajak Penghasilan)",
     choice3: "PKB (Pajak Kendaraan Bermotor)",
@@ -46,12 +45,13 @@ let questions = [
   },
   {
     question:
-      "Manakah dibawah ini yang bukan merupakan besaran persentase tarif pajak?",
-    choice1: "5% untuk penghasilan 0 s/d 50 juta",
-    choice2: "30% untuk penghasilan > 500 juta",
-    choice3: "15 % untuk penghasilan >50 juta s/d 250 juta",
-    choice4: "50% untuk penghasilan < 50 juta",
-    answer: 4,
+      "Pajak memiliki beberapa unsur pembentuknya. dimanakah dibawah ini yang merupakan unsur pembentuk pajak ?",
+    choice1: "Pajak tidak memiliki unsur paksaan dalam pemungutannya",
+    choice2:
+      "Imbal balik dari pemungutan pajak akan dirasakan untuk golongan tertentu",
+    choice3: "Berlaku untuk seluruh masyarakat tanpa terkecuali",
+    choice4: "uran dengan imbalan yang langsung dari negara",
+    answer: 3,
   },
   {
     question: "Berdasarkan sifatnya, jenis pajak dibagi menjadi 2 yaitu ?",
@@ -85,7 +85,7 @@ let questions = [
     choice2: "pembangunan rumah mewah untuk pejabat",
     choice3: "pembangunan fasilitas publik",
     choice4: "pembangunan fasilitas apa adanya",
-    answer: 2,
+    answer: 3,
   },
   {
     question:
@@ -105,13 +105,12 @@ let questions = [
     answer: 3,
   },
   {
-    question:
-      "Apa sanksi yang diberikan apabila masyarakat tidak membayar Pajak SPT Tahunan?",
-    choice1: "tidak mendapat hukuman apapun",
-    choice2: "dipenjarakan selama satu hari",
-    choice3:
-      "diberikan sanksi berupa bunga 2% perbulan dari pajak yang terlambat disetorkan dan terparahnya dipenjarakan minimal selama 6 bulan",
-    choice4: "dibebaskan",
+    question: "Dibawah ini manakah manfaat dari adanya pajak ?",
+    choice1: "membiayai proyek pembangunan yang tidak jelas",
+    choice2:
+      "tersedianya fasilitas private yang tidak dapat diakses oleh publik",
+    choice3: "Tersedianya fasilitas umum dan infrastruktur yang memadai",
+    choice4: "mengurangi jumlah fasilitas umum",
     answer: 3,
   },
   {
@@ -123,11 +122,12 @@ let questions = [
     answer: 3,
   },
   {
-    question: "yang termasuk kedalam janis pajak provinsi adalah..",
-    choice1: "pajak hotel",
-    choice2: "Pajak Bahan Bakar Kendaraan Bermotor",
-    choice3: "Pajak HIburan",
-    choice4: "Pajak Reklame",
+    question:
+      "Berdasarkan lembaga pemungutnya, pajak dibagi menjadi 2 jenis. yaitu ?",
+    choice1: "Redistribusi dan Bea Cukai",
+    choice2: "Pajak Pusat dan Pajak Daerah",
+    choice3: "Pajak pribadi dan pajak daerah",
+    choice4: "Redistribusi dan Pajak Pusat",
     answer: 2,
   },
   {
@@ -139,6 +139,14 @@ let questions = [
     answer: 1,
   },
 ];
+
+function setStatusClass(element, answer) {
+  if (answer) {
+    element.classList.add("correct");
+  } else {
+    element.classList.add("incorrect");
+  }
+}
 
 const SCORE_POINTS = 6.67;
 const MAX_QUESTIONS = 15;
@@ -154,7 +162,7 @@ getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
     localStorage.setItem("mostRecentScore", score);
 
-    return window.location.assign("end.html");
+    return window.location.assign("endUmum.html");
   }
 
   questionCounter++;

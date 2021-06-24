@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <style>
+    body {
+      color: white;
+      background-image: url(/src/assets/bg-2.jpeg);
+      min-width: 100%;
+      min-height: auto;
+      background-repeat: no-repeat;
+      object-fit: contain;
+      background-size: cover;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div id="end" class="flex-center flex-column">
+        <h1 id="finalScore">8</h1>
+        <form class="end-form-container">
+          <h2 id="end-text">Enter your name bellow to save your score!</h2>
+          <input
+            type="text"
+            name="name"
+            id="username"
+            placeholder="Enter your name"
+            autocomplete="off"
+          />
+          <img src="" alt="" />
+          <button
+            class="btn"
+            id="saveScoreBtn"
+            type="submit"
+            onclick="saveHighScore(event)"
+            disabled
+          >
+            Save
+          </button>
+        </form>
+        <a href="kategori.html" class="btn">Play Again</a>
+        <a href="index.html" class="btn-1"
+          >Go Home <i class="fas fa-home"></i
+        ></a>
+      </div>
+    </div>
+    <script src="/src/script/endKategori.js"></script>
+  </body>
+</html>
