@@ -75,16 +75,83 @@ let questions = [
     answer: 1,
   },
   {
-    question: "what is 2 + 2",
-    choice1: "1",
-    choice2: "2",
-    choice3: "3",
-    choice4: "4",
+    question:
+      "Apabila pajak merupakan iuran wajib yang dibayar oleh rakyat dan dana tersebut dikelola untuk pembangunan atau fasilitas umum yang dibutuhkan publik. menurutmu apakah ini termasuk kedalam prinsip demokrasi ?",
+    choice1: "tidak sama sekali",
+    choice2: "agak ragu",
+    choice3: "Ya, karena dari rakyat, oleh rakyat, untuk rakyat",
+    choice4: "tidak tahu",
+    answer: 3,
+  },
+  {
+    question:
+      "Ada sebuah pemberitahuan yang berbunyi “Pembayaran Pajak Kendaraan Bermotor dapat dilakukan paling cepat satu bulan sebelum jatuh tempo, apabila melewati jatuh tempo pembayaran. Maka akan dikenakan denda berupa bunga 2% per bulan”. apabila kamu memiliki Kewajiban untuk membayar PKB dengan jatuh tempo pada bulan Juli 2021. Berapa besaran denda yang harus kamu terima bila kamu membayar pajak tersebut pada bulan Mei 2021 ?",
+    choice1: "4%",
+    choice2: "0%",
+    choice3: "6%",
+    choice4: "2%",
     answer: 2,
+  },
+  {
+    question:
+      "apabila kamu adalah seorang wirausaha dan harus membayarkan pajak penghasilan. maka sistem pemungutan pajaknya ialah..",
+    choice1: "official assesment system",
+    choice2: "self assesment system",
+    choice3: "witholding system",
+    choice4: "government system",
+    answer: 2,
+  },
+  {
+    question:
+      " Kapankah batas waktu penyampaian SPT Tahunan PPh (pajak penghasilan) wajib orang pribadi?",
+    choice1: "satu bulan setelah akhir tahun pajak atau pada 31 Januari.",
+    choice2: "enam bulan setelah akhir tahun pajak atau pada 31 Juni.",
+    choice3: "empat bulan setelah akhir tahun pajak atau pada 30 April",
+    choice4: "tiga bulan setelah akhir tahun pajak atau pada 31 Maret.",
+    answer: 4,
+  },
+  {
+    question:
+      "Apa sanksi yang kita dapatkan, jika kita terlambat menyetorkan/ tidak menyampaikan SPT Tahunan?",
+    choice1: "Dikenakan sanksi administrasi berupa denda Rp 500 ribu",
+    choice2: "Dikenakan sanksi administrasi berupa denda Rp 200 ribu",
+    choice3: "Dikenakan sanksi administrasi berupa denda Rp 100 ribu",
+    choice4: "Dikenakan sanksi administrasi berupa denda Rp 150 ribu",
+    answer: 3,
+  },
+  {
+    question:
+      "dibawah ini merupakan Kondisi yang menyebabkan SPT dianggap tidak disampaikan, kecuali…",
+    choice1:
+      "SPT Tahunan disampaikan sebelum Direktur Jenderal Pajak melakukan pemeriksaan atau menerbitkan surat ketetapan pajak",
+    choice2:
+      "SPT Tahunan tidak ditandatangani oleh Wajib Pajak/Kuasa Wajib Pajak ",
+    choice3:
+      "SPT Tahunan tidak sepenuhnya dilampiri keterangan dan/atau dokumen yang dipersyaratkan",
+    choice4:
+      "SPT Tahunan disampaikan setelah Direktur Jenderal Pajak melakukan pemeriksaan atau menerbitkan surat ketetapan pajak",
+    answer: 1,
+  },
+  {
+    question: "Apa yang dimaksud dengan Tax Amnesty (pengampunan pajak)?",
+    choice1: "penghapusan pajak",
+    choice2: "penambahan tarif pajak ",
+    choice3: "pemberian sanksi pajak ",
+    choice4: "perbaikan sistem perpajakan",
+    answer: 1,
+  },
+  {
+    question:
+      "Kewajiban perpajakan yang mendapatkan Pengampunan Pajak terdiri atas, kecuali",
+    choice1: "Pajak Penghasilan, ",
+    choice2: "Pajak Pertambahan Nilai",
+    choice3: "Pajak Bumi dan Bangunan",
+    choice4: "Pajak Pertambahan Nilai dan Pajak Penjualan atas Barang Mewah",
+    answer: 3,
   },
 ];
 
-const SCORE_POINTS = 6.67;
+const SCORE_POINTS = 6.7;
 const MAX_QUESTIONS = 15;
 
 startGame = () => {
@@ -139,7 +206,7 @@ choices.forEach((choice) => {
     setTimeout(() => {
       selectedChoice.parentElement.classList.remove(classToApply);
       getNewQuestion();
-    }, 100);
+    }, 1000);
   });
 });
 

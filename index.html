@@ -13,28 +13,49 @@
   </head>
 
   <body>
-    <section>
+    <video autoplay muted loop id="myVideo">
+      <source src="/src/assets/taxqu.mp4" type="video/mp4" />
+    </video>
+
+    <section class="content">
       <div class="container" style="justify-content: center">
         <div class="flex-column flex-center" id="home">
           <h1
-            class="line-1 anim-typewriter heading-1"
+            class=""
             style="
-              font-size: 4rem;
+              font-size: 11rem;
               color: rgb(15, 15, 15);
-              background-color: white;
               border-radius: 23px;
-              opacity: 0.8;
-              padding: 1em;
+              opacity: 1;
+
+              font-family: 'Bebas Neue', cursive; ;
             "
           >
-            Are you ready?
+            TAX -
+            <span style="color: rgb(255, 27, 27); font-size: 12rem">QU</span>
           </h1>
-          <a href="kategori.html" class="btn-size">Play</a>
+          <div class="mt-1">
+            <h1
+              class="line-1 anim-typewriter heading-1"
+              style="
+                font-size: 4rem;
+                color: rgb(15, 15, 15);
+                background-color: white;
+                border-radius: 23px;
+                opacity: 0.8;
+                padding: 1em;
+              "
+            >
+              Are you ready?
+            </h1>
+          </div>
+
+          <a href="kategori.html" class="btn-size">Play </a>
           <a href="leaderboard.html" class="btn-size" id="highscore-btn">
             Leaderboard <i class="fas fa-crown"></i>
           </a>
           <a
-            href="about.html"
+            href="aboutUs.html"
             class="btn-size"
             style="
               background: linear-gradient(
@@ -43,8 +64,8 @@
                 rgb(255, 0, 98) 100%
               );
             "
-            >About Us</a
-          >
+            >About Us
+          </a>
         </div>
       </div>
       <audio

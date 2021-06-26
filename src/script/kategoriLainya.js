@@ -144,7 +144,7 @@ let questions = [
   },
 ];
 
-const SCORE_POINTS = 6.67;
+const SCORE_POINTS = 6.7;
 const MAX_QUESTIONS = 15;
 
 startGame = () => {

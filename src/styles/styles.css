@@ -1,9 +1,53 @@
 /* import font style */
-@import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 /* set up awal */
-:root {
-  background-color: rgb(29, 26, 26);
+
+.hero {
+  background-image: url(/src/assets/bg-2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ls-1 {
+  letter-spacing: 1px;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add some content at the bottom of the video/page */
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
 }
 
 * {
@@ -11,11 +55,10 @@
   margin: 0;
   padding: 0;
   font-size: 62.5%;
-  font-family: "Nova Square", cursive;
+  font-family: "Roboto", sans-serif;
 }
 
 section {
-  background-image: url(/src/assets/background.jpeg);
   background-position: center;
   object-fit: contain;
   background-repeat: no-repeat;
@@ -349,6 +392,10 @@ h2 {
     background-position: center;
     object-fit: cover;
     background-repeat: repeat;
+  }
+
+  .mt-1 {
+    margin-top: 12rem;
   }
 
   .choice-container {

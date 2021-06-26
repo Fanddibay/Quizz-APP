@@ -50,7 +50,7 @@ let questions = [
     choice2:
       "Imbal balik dari pemungutan pajak akan dirasakan untuk golongan tertentu",
     choice3: "Berlaku untuk seluruh masyarakat tanpa terkecuali",
-    choice4: "uran dengan imbalan yang langsung dari negara",
+    choice4: "Iuran dengan imbalan yang langsung dari negara",
     answer: 3,
   },
   {
@@ -148,7 +148,7 @@ function setStatusClass(element, answer) {
   }
 }
 
-const SCORE_POINTS = 6.67;
+const SCORE_POINTS = 6.7;
 const MAX_QUESTIONS = 15;
 
 startGame = () => {
@@ -203,7 +203,7 @@ choices.forEach((choice) => {
     setTimeout(() => {
       selectedChoice.parentElement.classList.remove(classToApply);
       getNewQuestion();
-    }, 100);
+    }, 1000);
   });
 });
 
