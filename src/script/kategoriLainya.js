@@ -16,7 +16,7 @@ let questions = [
       "Dibawah ini barang-barang yang dapat dikenakan pajak barang mewah ialah?",
     choice1: "Jaket harga Rp 30.000 ",
     choice2: "Beras",
-    choice3: "Mobil Spor",
+    choice3: "Mobil Sport",
     choice4: "Topi sekolah",
     answer: 3,
   },
@@ -100,7 +100,7 @@ let questions = [
     answer: 4,
   },
   {
-    question: "Dibawah ini yang termasuk objek pajak pajak, kecuali..",
+    question: "Dibawah ini yang termasuk objek pajak, kecuali..",
     choice1: "Kendaraan Bermotor",
     choice2: "Rumah Mewah",
     choice3: "Gerobak",
@@ -144,7 +144,7 @@ let questions = [
   },
 ];
 
-const SCORE_POINTS = 6.7;
+const SCORE_POINTS = 10;
 const MAX_QUESTIONS = 15;
 
 startGame = () => {
