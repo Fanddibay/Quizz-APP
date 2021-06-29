@@ -14,16 +14,21 @@
       crossorigin="anonymous"
     />
   </head>
+
   <style>
     body {
-      overflow: hidden;
-      background: url(/src/assets/bg-1.jpeg) no-repeat;
-      background-position: center;
+      color: white;
+      background-image: url(/src/assets/bg-1.jpeg);
+      min-width: 100%;
+      min-height: auto;
+      background-repeat: no-repeat;
+      object-fit: contain;
       background-size: cover;
     }
   </style>
-  <body>
-    <section>
+
+  <body class="">
+    <section class="img">
       <div class="container" style="justify-content: center">
         <h1
           style="
@@ -31,7 +36,7 @@
             text-align: center;
             color: #fff;
             font-weight: bolder;
-            margin-top: 4rem;
+            margin-top: 1rem;
           "
         >
           Leaderboard

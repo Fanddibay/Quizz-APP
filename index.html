@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -12,68 +11,71 @@
     <link rel="stylesheet" href="/src/styles/styles.css" />
   </head>
 
-  <body>
+  <body onload="myFunction()">
     <video autoplay muted loop id="myVideo">
       <source src="/src/assets/taxqu.mp4" type="video/mp4" />
     </video>
-
-    <section class="content">
-      <div class="container" style="justify-content: center">
-        <div class="flex-column flex-center" id="home">
-          <h1
-            class=""
-            style="
-              font-size: 11rem;
-              color: rgb(15, 15, 15);
-              border-radius: 23px;
-              opacity: 1;
-
-              font-family: 'Bebas Neue', cursive; ;
-            "
-          >
-            TAX -
-            <span style="color: rgb(255, 27, 27); font-size: 12rem">QU</span>
-          </h1>
-          <div class="mt-1">
+    <div id="loader"></div>
+    <main class="animate-bottom" id="myDiv" style="display: none">
+      <section class="img content">
+        <div class="container" style="justify-content: center">
+          <div class="flex-column flex-center">
             <h1
-              class="line-1 anim-typewriter heading-1"
+              class=""
               style="
-                font-size: 4rem;
+                font-size: 11rem;
                 color: rgb(15, 15, 15);
-                background-color: white;
                 border-radius: 23px;
-                opacity: 0.8;
-                padding: 1em;
+                opacity: 1;
+                margin-top: -8rem;
+                font-family: 'Bebas Neue', cursive; ;
               "
             >
-              Are you ready?
+              TAX -
+              <span style="color: rgb(255, 27, 27); font-size: 12rem">QU</span>
             </h1>
-          </div>
+            <div class="mt-1">
+              <h1
+                class="line-1 anim-typewriter heading-1"
+                style="
+                  font-size: 4rem;
+                  color: rgb(15, 15, 15);
+                  background-color: white;
+                  border-radius: 23px;
+                  opacity: 0.8;
+                  padding: 1em;
+                "
+              >
+                Are you ready?
+              </h1>
+            </div>
 
-          <a href="kategori.html" class="btn-size">Play </a>
-          <a href="leaderboard.html" class="btn-size" id="highscore-btn">
-            Leaderboard <i class="fas fa-crown"></i>
-          </a>
-          <a
-            href="aboutUs.html"
-            class="btn-size"
-            style="
-              background: linear-gradient(
-                90deg,
-                rgb(18, 255, 137) 0%,
-                rgb(255, 0, 98) 100%
-              );
-            "
-            >About Us
-          </a>
+            <a href="kategori.html" class="btn-size">Play </a>
+            <a href="leaderboard.html" class="btn-size" id="highscore-btn">
+              Leaderboard <i class="fas fa-crown"></i>
+            </a>
+            <a
+              href="aboutUs.html"
+              class="btn-size"
+              style="
+                background: linear-gradient(
+                  90deg,
+                  rgb(18, 255, 137) 0%,
+                  rgb(255, 0, 98) 100%
+                );
+              "
+              >About Us
+            </a>
+          </div>
         </div>
-      </div>
-      <audio
-        src="/src/assets/backsound.mp3"
-        type="audio/mpeg"
-        autoplay
-        loop
-      ></audio>
-    </section>
+        <audio
+          src="/src/assets/backsound.mp3"
+          type="audio/mpeg"
+          autoplay
+          loop
+        ></audio>
+      </section>
+    </main>
+    <script src="/src/script/index.js"></script>
   </body>
 </html>

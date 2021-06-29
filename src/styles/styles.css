@@ -14,41 +14,106 @@
   letter-spacing: 1px;
 }
 
+.container {
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  max-width: 90rem;
+  margin: 0px auto;
+  padding: 2rem;
+}
+
+/* animasi */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border-top: 16px solid #ff7676;
+  border-right: 16px solid #ff2424;
+  border-bottom: 16px solid #c42323;
+  border-left: 16px solid #611010;
+  border-radius: 50%;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
 /* Style the video: 100% width and height to cover the entire window */
+
+/* Add some content at the bottom of the video/page */
 #myVideo {
   position: fixed;
   right: 0;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+  z-index: -1;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
 }
 
 .content {
-  position: fixed;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0);
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
+  z-index: 1;
 }
-
-/* Add some content at the bottom of the video/page */
-
 /* Style the button used to pause/play the video */
-#myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-}
-
-#myBtn:hover {
-  background: #ddd;
-  color: black;
-}
 
 * {
   box-sizing: border-box;
@@ -62,7 +127,7 @@ section {
   background-position: center;
   object-fit: contain;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 
 h1 {
@@ -77,16 +142,11 @@ h2 {
 }
 /* end set up */
 
-/* set up halaman home */
-.container {
-  width: 100vw;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  max-width: 80rem;
-  margin: 0 auto;
-  padding: 2rem;
+.-mt-1 {
+  margin-top: -4rem;
 }
+
+/* set up halaman home */
 
 .flex-column {
   display: flex;
@@ -384,16 +444,23 @@ h2 {
       rgb(56, 43, 38) 100%
     );
   }
+  .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 @media screen and (max-width: 992px) {
-  section {
-    background-image: url(/src/assets/background.jpeg);
-    background-position: center;
+  .img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
   }
-
   .mt-1 {
     margin-top: 12rem;
   }
